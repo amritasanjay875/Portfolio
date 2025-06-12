@@ -2,79 +2,174 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Amrita Sanjay</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     </head>
 
     <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Amrita Sanjay</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#notable-works">Notable Works</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#publications">Research</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         <!-- Hero card section -->
-        <header class="hero-card">
-            <h1>Amrita Sanjay</h1>
-            <h2>Generative AI Researcher | Mobile & Full Stack Web Developer</h2>
-            <h3>Driving AI Integration in Mobile and Web Applications</h3>
-            <a href="#about">About Me</a>
+        <header class="hero-card container">
+            <div class="profile-container">
+                <a href="https://www.linkedin.com/in/amrita-sanjay-9886b11b5/" target="_blank">
+                    <img src="./LinkedIn_Profile_Amrita.jpg" alt="Amrita Sanjay"  class="profile-picture">
+                </a>
+                <h1>Amrita Sanjay</h1>
+                <div class="tagline">
+                    <h2>Generative AI Researcher | Mobile & Full Stack Web Developer</h2>
+                    <p>Driving AI Integration in Mobile and Web Applications</h3>
+                </div>
+            </div>
         </header>
 
         <main>
-            <!-- About Me section -->
-            <section id="about">
-                <h2>About Me</h2>
-                <p>Experienced mobile application and web application developer with expertise 
-                    in integrating AI models into mobile applications, and predictive analytics. 
-                    Passionate about enhancing user experiences by leveraging ML techniques.</p>
+            <!-- About section -->
+            <section id="about" class="container">
+                <h2 class="sub-heading">My Journey in AI & Development</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>I am a mobile application and web application development enthusiast with expertise in integrating AI models into 
+                            mobile applications and predictive analytics. Passionate about enhancing user experiences by leveraging ML techniques,
+                            I constantly seek out new advancements in deep learning. My commitment to optimizing user experiences has led 
+                            to measurable results, including a significant increase in user satisfaction ratings and app loading times 
+                            through UI redesigns using Kotlin, Jetpack Compose, and Material Design Principles.</p>
+                        <p>I have also developed a prototype for a connected mobile application, enhancing user interaction with an object 
+                            detection model that identifies Bluetooth-paired hardware from user-captured images. My curiosity and dedication 
+                            have led me to publish research papers in Scopus-indexed publications, contributing to cutting-edge 
+                            innovations in AI and data-driven technologies.</p>
+                        <p>Apart from my technical expertise, I love exploring new cuisines and experimenting with recipes. Cooking is my 
+                            passion, it brings me joy, creativity, and a sense of fulfillment just as much as coding does.</p>
+                    </div>
+                </div>   
             </section>
 
-            <!-- Expertise Area Section-->
-            <section id="expertise">
-                <h2>Turning Innovation into Impact</h2>
-                <p>Through artificial intelligence, mobile development and full-stack web development
-                    technologies, I craft solutions that enhance usability, optimize efficiency, and
-                    bring ideas to life.
-                </p>
-                <h3>Building Smarter Solitions</h3>
-                <ul>
-                    <li><strong>AI & Machine Learning:</strong>I have applied AI and Machine Learning 
-                        to develop impactful solutions, including removing haze from images using deep 
-                        learning and creating a data mining model for cancer prediction with optimized 
-                        feature selection.</li>
-                    <li><strong>Mobile Development:</strong>I have built seamless, user-centric 
-                        applications using Kotlin and Jetpack Compose, integrating TensorFlow Lite 
-                        for object detection models that enhance user feedback and interactivity.</li>
-                    <li><strong>Web Development:</strong>I have designed modern, scalable web 
-                        applications with React and Firebase, focusing on intuitive UI experiences 
-                        that improve accessibility and engagement.</li>
-                </ul>
+            <!-- Notable works section-->
+            <section id="notable-works" class="container">
+                <h2 class="sub-heading">Turning Innovation into Impact</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="notable-card">
+                            <div class="notable-card-header">
+                                <h3>AI & ML</h3>
+                            </div>
+                            <div class="notable-card-body">
+                                <p>I have applied AI and Machine Learning to develop impactful solutions, including removing haze from images 
+                                using deep learning and creating a data mining model for cancer prediction with optimized feature selection.</p>
+                            </div>
+                           <img src="./machine-learning.jpg" alt="AI & ML" class="notable-works-image img-fluid rounded"> 
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="notable-card">
+                            <div class="notable-card-header">
+                                <h3>Mobile Development</h3>
+                            </div>
+                            <div class="notable-card-body">
+                                <p>I have built seamless, user-centric applications using Kotlin and Jetpack Compose, integrating TensorFlow Lite 
+                                    for object detection models that enhance user feedback and interactivity.</p>
+                            </div>
+                           <img src="./mobile-development.jpg" alt="Mobile Development" class="notable-works-image img-fluid rounded"> 
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="notable-card">
+                            <div class="notable-card-header">
+                                <h3>Web Development</h3>
+                            </div>
+                            <div class="notable-card-body">
+                                <p>I have designed modern, scalable web applications with React and Firebase, focusing on intuitive UI 
+                                    experiences that improve accessibility and engagement.</p>
+                            </div>
+                           <img src="./web-development.jpg" alt="Web Development" class="notable-works-image img-fluid rounded"> 
+                        </div>
+                    </div>
+                </div>
             </section>
+
 
             <!-- Publication Section -->
-            <section id="publications">
-                <h2>Research & Innovation</h2>
-                <p>Exploring AI-driven solutions and impactful applications through research and 
-                    development.</p>
-                    
-                <article>
-                    <h3>Haze Removal using GAN</h3>
-                    <p>Published in Springer</p>
-                    <p>Developed and trained a Conditional GAN model to enhance hazy images, 
-                        achieving high performance metrics on NYU Depth and O-Haze datasets.</p>
-                    <a href="#">View Publication</a>
-                </article>
+            <section id="publications" class="container">
+                <h2 class="sub-heading">Research & Innovation</h2>
+                <p>Exploring AI-driven solutions and impactful applications through research and development.</p>
 
-                <article>
-                    <h3>A Data Mining Model To Predict Breast Cancer Using Improved Feature 
-                        Selection Method On Real Time Data</h3>
-                    <p>Published in IEEE</p>
-                    <p>Designed a Naive Bayes classifier with improved feature selection methods, 
-                        achieving high accuracy in classifying cancerous and non-cancerous data.</p>
-                    <a href="#">View Publication</a>
-                </article>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="publication-card shadow-sm">
+                            <div class="publication-card-body">
+                                <h3 class="publication-card-title">Haze Removal using GAN</h3>
+                                <p class="text-muted"><em>Published in Springer</em></p>
+                                <p>Developed and trained a Conditional GAN model to enhance hazy images, achieving high performance 
+                                    metrics on NYU Depth and O-Haze datasets.</p>
+                                <a href="https://link.springer.com/chapter/10.1007/978-981-33-6987-0_18" class="btn btn-dark" 
+                                target="_blank">View Publication</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="publication-card shadow-sm">
+                            <div class="publication-card-body">
+                                <h3 class="publication-card-title">Cancer Prediction Model</h3>
+                                <p class="text-muted"><em>Published in IEEE</em></p>
+                                <p>Designed a Naive Bayes classifier with improved feature selection methods, achieving high accuracy in 
+                                    classifying cancerous and non-cancerous data.</p>
+                                <a href="https://ieeexplore.ieee.org/document/8554450" class="btn btn-dark" target="_blank">View Publication</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container">
+            <h2 class="sub-heading">Get in Touch</h2>
+            <div class="row">
+                <div class="col-md-6 contact-icons">
+                    <a href="https://www.linkedin.com/in/amrita-sanjay-9886b11b5/" target="_blank" class="btn btn-dark">
+                        <i class="fa fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/amritasanjay875" target="_blank" class="btn btn-dark">
+                        <i class="fa fa-github"></i> GitHub
+                    </a>
+                    <a href="mailto:amrita.sanjay@outlook.com" target="_blank" class="btn btn-dark">
+                        <i class="fa fa-envelope"></i> Email
+                    </a>
+                </div>
+            </div>
+        </section>
+
 
         <!-- Footer -->
         <footer>
             <p>&copy; 2025 Amrita Sanjay | Portfolio</p>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
